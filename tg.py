@@ -34,12 +34,8 @@ def help(message):
 
 @bot.message_handler(content_types="photo")
 def phrepl(message):
-    global blockedlist
     if message.caption != None:
         if message.caption.startswith("/create-reply "):
-            if message.chat.id in blockedlist:
-                bot.reply_to(message, "Взаимодействие с ОпенХавронией в этом чате запрещено администрацией.")
-                return 0;
             if "\n" in message.caption:
                 wtext = message.caption.replace("/create-reply ", "").split("\n")[0].lower()
                 wttext = message.caption.split("\n")[1]
