@@ -88,9 +88,6 @@ def antxt(message):
         else:
             bot.reply_to(message, "Вы неверно ввели комманду. Воспользуйтесь командой /help.")
     elif message.text.startswith("/delete-reply "):
-        if str(message.chat.id) in blockedlist:
-            bot.reply_to(message, "Взаимодействие с ОпенХавронией в этом чате запрещено администрацией.")
-            return 0;
         if "\n" in message.text:
             wtext = message.text.replace("/delete-reply ", "").split("\n")[0].lower()
             wttext = message.text.split("\n")[1]
