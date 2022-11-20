@@ -1,5 +1,5 @@
 # OpenHavroniya Source code
-This is a VK bot on Python. <br/>
+This is a Telegram bot on Python. <br/>
 With this bot you can: <br/>
 1. Create your custom reply`s with: <br/>
    /create-reply What is your name? <br/>
@@ -22,7 +22,7 @@ With this bot you can: <br/>
 
      pip install requirements.txt
   
-3. Run the script (vk.py)
+3. Run the script (main.py)
    If you start the script first, you
    get a Error. It is not bad, just
    you must pase token in console.
@@ -34,7 +34,7 @@ in English. Please write me right
 translate in issues.
 
 # Исходный код ОпенХавронии
-Это VK бот на Python. <br/>
+Это Telegram бот на Python. <br/>
 С его помощью ты можешь:
 1. Создавать кастомные ответы с помощью:
    /create-reply Как тебя зовут?<br/>
